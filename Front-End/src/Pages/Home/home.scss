@@ -1,0 +1,230 @@
+.pluto-wrap {
+    width: 100%;
+    padding-top: 96px;
+    // background-color: rgb(224, 225, 233);
+    .pluto-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 12px;
+        .pluto-menu-banner {
+            display: flex;
+            width: 1296px;
+            height: 100%;
+            margin: 0 auto;
+            .pluto-banner {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                .menu-banner {
+                    width: 74%;
+                    height: 100%;
+                    overflow: hidden;
+                    background-color: rgb(160, 178, 226);
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                    border-radius: 12px;
+                    margin: 0 12px;
+                    .banner {
+                        display: flex;
+                        width: 296%;
+                        height: 100%;
+                        input {
+                            display: none;
+                        }
+                        .slide {
+                            width: 269%;
+                            height: 100%;
+                            transition: 2s;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .banner-left {
+                    width: 26%;
+                    height: 100%;
+                    border-radius: 12px;
+                    .banner-left-items {
+                        img {
+                            border-radius: 12px;
+                            margin-bottom: 14px;
+                            width: 100%;
+                            height: 124px;
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banners {
+        width: 1296px;
+        margin: 24px auto;
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+    .show-product {
+        width: 1296px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 auto;
+        p {
+            font-weight: 700;
+            color: rgb(212, 169, 255, 1);
+            text-align: center;
+        }
+        .product-list {
+            display: flex;
+            font-size: 16px;
+            align-items: center;
+            .product-item {
+                margin: 0 8px 0 0;
+                p {
+                    color: #3b4463;
+                    border: 2px solid #5a84d6;
+                    padding: 4px;
+                    background-color: #d2d5db;
+                    border-radius: 8px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .pluto-list-items {
+        width: 1296px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        // background-color: rgb(71, 39, 39);
+        .menu-items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            cursor: pointer;
+            .menu-item {
+                width: 19%;
+                height: 424px;
+                margin-bottom: 12px;
+                border-radius: 12px;
+                box-shadow: 4px 4px 8px #2b2a2a, -7px -7px 8px #232324;
+                .item-products {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(50deg, #3c463f, #152031);
+                    border-radius: 12px;
+                    .item-product {
+                        margin: 4px;
+                        padding: 4px;
+                        width: 100%;
+                        height: 99%;
+                        overflow: hidden;
+                        background: inherit;
+                        border-radius: 8px;
+                        z-index: 999;
+                        img {
+                            width: 100%;
+                            height: 220px;
+                            margin-bottom: 8px;
+                        }
+                        .name-product {
+                            margin-bottom: 8px;
+                            p {
+                                font-weight: 700;
+                                background-image: linear-gradient(
+                                    -225deg,
+                                    #9878e4 0%,
+                                    #653796 29%,
+                                    #ff1361 67%,
+                                    #dad66c 100%
+                                );
+                                background-size: auto auto;
+                                background-clip: border-box;
+                                background-size: 200% auto;
+                                color: #fff;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                animation: textclip 2s linear infinite;
+                                display: inline-block;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .item-products:hover {
+                    transition: 0.5s;
+                    transform: scale(1.02);
+                }
+                .item-products::before {
+                    content: '';
+                    position: absolute;
+                    width: 540px;
+                    height: 24px;
+                    top: 0;
+                    right: 32px;
+                    transition: 2s;
+                    background: linear-gradient(30deg, #00ff59, #02b3ff);
+                    transform: rotate(-45deg) translate(0, -100px);
+                }
+                .item-products:hover::before {
+                    animation: cart 2s;
+                }
+
+                .price-product {
+                    color: #5c7fc0;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-bottom: 4px;
+                }
+                .discription-product {
+                    margin: 12px 0;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    padding: 4px;
+                    font-size: 16px;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 25px 50px -12px;
+                    background-color: rgb(216, 216, 223);
+                }
+                .ratting {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 8px;
+                    color: rgb(101, 174, 207);
+                    .ratting-start:first-child {
+                        color: rgb(169, 219, 88);
+                        margin-left: 0px;
+                    }
+                    .ratting-start {
+                        color: rgb(155, 231, 33);
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    @keyframes cart {
+        100% {
+            transform: rotate(-50deg) translate(0, 640px);
+        }
+    }
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+}

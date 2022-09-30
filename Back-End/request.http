@@ -1,0 +1,126 @@
+POST  http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+    "userName":"admin224331",
+    "email":"manajppgder@gmail.com",
+    "password": "1234",
+    "firstName": "manager",
+    "lastName": "",
+    "numberPhone": "123231424",
+    "adress":"18 pho vien phuong duc thang quan bac tu liem HN"
+}
+ 
+###
+
+POST http://localhost:8080/api/user/login
+Content-Type: application/json
+
+{
+    "userName": "admin",
+    "password": "1234"
+}
+
+###
+POST http://localhost:8080/api/order
+Content-Type: application/json
+
+{
+    "email":"rinhdz1111@gmail.com",
+    "name":"rinh",
+    "product":"Iphone 13 Pro Max",
+    "paymentMethod":"Online",
+    "phonenumber":"1023132",
+    "address":"18 Phố Viên",
+    "note":"Không có",
+   
+}
+
+###
+
+###
+POST http://localhost:8080/api/admin/product/add
+Content-Type: application/json
+
+{
+    "name":"Iphone 13 Pro Max",
+    "url":"https://cdn2.cellphones.com.vn/358x/media/catalog/product/b/_/b_c_ar_6.png",
+    "price":26590000,
+    "amount":"100",
+    "type":"cellphones",
+    "trademark":"Apple",
+    "discription":"Dây là cái điện thoại Iphone "
+}
+
+###
+PUT http://localhost:8080/api/admin/product/update
+Content-Type: application/json
+
+{
+    "id":"63074d1b1409f61d43035641",
+    "name":"rinh123@gmarrieeel.com", 
+    "url":"asdsddddd",
+    "price":555655554,
+    "type":"asdsd", 
+    "trademark":"rinhdz"
+    
+}
+
+###
+DELETE  http://localhost:8080/api/admin/product/delete
+Content-Type: application/json
+
+{
+    "id":"63074d1b1409f61d43035641"
+   
+}
+
+###
+POST http://localhost:8080/api/admin/order/delete
+Content-Type: application/json
+
+{
+    "id":"63074d0a1409f61d4303563f"
+   
+}
+
+###
+PUT http://localhost:8080/api/admin/user/update
+Content-Type: application/json
+
+{
+    "id": "63074504240e52f2ed5f1716",
+    "userName":"admin21",
+    "email":"manajppgder@gmail.com",
+    "password": "12344",
+    "firstName": "rinêh",
+    "lastName": "",
+    "numberPhone": "123231424",
+    "adress":"18 pho vien phuong duc thang quan bac tu liem HN"
+}
+###
+DELETE http://localhost:8080/api/admin/user/delete
+Content-Type: application/json
+
+{
+    "_id":"6314fde1ab0f02a75af2d6e3"
+   
+}
+
+###
+POST http://localhost:8080/api/admin/user/add
+Content-Type: application/json
+
+{
+    "userName":"manager",
+    "email":"manager@gmail.com",
+    "password": "1234",
+    "firstName": "manager",
+    "lastName": "",
+    "numberPhone": "0969938892",
+    "adress":"Nam Định",
+   
+}
+
+###
+PUT http://localhost:8080/api/change-user

@@ -1,0 +1,111 @@
+.abc {
+    margin: 0;
+    padding: 0;
+    .register-wrap {
+        margin: 0 auto;
+        padding-top: 96px;
+        padding-bottom: 64px;
+        width: 1296px;
+        height: 800px;
+        .register-content {
+            background-color: hsla(0, 0%, 100%);
+            box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+            height: 100%;
+            border-radius: 8px;
+            background-size: cover;
+            // background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('https://images.wallpaperscraft.com/image/single/galaxy_stars_universe_light_planet_63624_1920x1080.jpg');
+            background-image: url('https://images.wallpaperscraft.com/image/single/galaxy_glow_spiral_142698_1920x1080.jpg');
+            .register-form {
+                margin: 0 auto;
+                width: 52%;
+                height: 100%;
+                padding: 64px;
+                .form {
+                    width: 100%;
+                    height: 80%;
+                    padding: 15px;
+                    // background-color: rgb(226, 217, 217);
+                    .rows {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 24px;
+                        .name-input {
+                            .input-name {
+                                width: 240px;
+                                height: 36px;
+                                border-radius: 4px;
+                                border: 2px solid transparent;
+                                outline: none;
+                                padding: 8px;
+                            }
+                            .form-control {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                    .form-outline {
+                        margin-bottom: 24px;
+                        .name-input {
+                            width: 100%;
+                            height: 36px;
+                            border-radius: 4px;
+                            border: 2px solid transparent;
+                            outline: none;
+                            padding: 8px;
+                        }
+                        .form-control {
+                            background-color: #fff;
+                        }
+                        .name-input:focus {
+                            border: 2px solid #0c56d0;
+                        }
+                    }
+                    .submit {
+                        color: white;
+                        width: 100%;
+                        height: 36px;
+                        border: none;
+                        background-color: #1266f1;
+                        border-radius: 4px;
+                    }
+                    .submit:hover {
+                        color: #fff;
+                        background-color: #0c56d0;
+                    }
+                    .text-content {
+                        margin-top: 96px;
+                        text-align: center;
+                        p {
+                            color: #2b086b;
+                            font-weight: 700;
+                        }
+                        .list-items {
+                            width: 50%;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: space-between;
+                            .btn-list-icon {
+                                font-size: 24px;
+                                border: none;
+                                background: none;
+                                .icons-color {
+                                    color: #2f1f8dcc;
+                                }
+                            }
+                            .btn-list-icon:hover {
+                                background-color: rgb(255, 252, 252, 0.5);
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+                h2 {
+                    text-align: center;
+                    color: #80affa;
+                    font-weight: 700 !important;
+                    padding-bottom: 32px;
+                }
+            }
+        }
+    }
+}

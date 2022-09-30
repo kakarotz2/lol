@@ -1,0 +1,17 @@
+.isLoading {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 48, 53, 0.4);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    .spinner {
+        color: rgb(0, 0, 0);
+        width: 64px;
+        height: 64px;
+    }
+}

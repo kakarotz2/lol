@@ -1,0 +1,10 @@
+.chart {
+    flex: 4;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #b1b1b1, -6px -6px 12px #ffffff;
+    padding: 8px;
+    color: gray;
+    .title {
+        margin-bottom: 12px;
+    }
+}
