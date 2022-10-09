@@ -35,5 +35,15 @@ class ProductController {
             }
         });
     };
+    async getProductById(req,res) {
+        const id = req.params.id
+        const product = await productModel.findOne({_id:id})
+        if(product){
+            return res.json({
+                product
+            })
+        }
+        return res.status(400).json("Can not get data")
+    }
 }
 module.exports = new ProductController();
